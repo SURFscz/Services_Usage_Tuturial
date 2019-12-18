@@ -1,0 +1,10 @@
+version: '3'
+
+services:
+  app:
+    build: .
+    environment:
+      - LDAP_HOST=${LDAP_HOST}
+      - LDAP_BIND=${LDAP_BIND}
+      - LDAP_PASS=${LDAP_PASS}
+      - LDAP_BASE=${LDAP_BASE}
